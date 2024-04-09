@@ -32,11 +32,33 @@ const Home = () => {
                 </div>
                 <div>
                     <p className='text-center font-bold text-4xl text-gray-dark dark:text-white-900'>
-                        Be the reason <br />for <br />someone's heartbeat
+                        Be the reason for <br/>someone's heartbeat
                     </p>
                 </div>
             </div>
+            <br/>
+            <br/>
+            <h1 className='text-xl underline font-bold text-black text-center mt-5 mb-5'>
+                Blood Donation Process
+            </h1>
+            <br/>
+            <div className='grid grid-cols-2 place-items-center'>
+                {temp2.map((e, i) =>
+                    <div className='border-metal shadow-md rounded-lg overflow-hidden max-w-[90%] select-none grid grid-cols-2'>
+                        <div><img src={e.img} draggable={false} width="100%" alt="" /></div>
+                        <div className='m-4'>
+                            <h1 className='font-bold text-lg text-midnight dark:text-white-900'>{i + 1} - {e.title}</h1>
+                            <p className='text-justify'>Lorem ipsum dolor, sit amet consectetur qwey adipisicing elit. Doloribus, as aliquam corporis dolorem consectetur qui libero, veritatis, nihil alias repellat quam architecto nobis laudantium ipsum nemo nesciunt quisquam est odit ad?</p>
+                        </div>
+                    </div>
+                )}
+            </div>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
             <h1 className='font-bold text-center text-black my-4 text-lg underline'>Learn About Donation</h1>
+            <br/>
             <div className='flex px-20'>
                 <div>
                     <img src={donationFact} width="90%" alt="" />
@@ -66,20 +88,7 @@ const Home = () => {
                     </table>
                 </div>
             </div>
-            <p className='text-xl font-bold text-black text-center mt-5 mb-5'>
-                Blood Donation Process
-            </p>
-            <div className='grid grid-cols-2 place-items-center'>
-                {temp2.map((e, i) =>
-                    <div className='border-metal shadow-md rounded-lg overflow-hidden max-w-[90%] select-none grid grid-cols-2'>
-                        <div><img src={e.img} draggable={false} width="100%" alt="" /></div>
-                        <div className='m-4'>
-                            <h1 className='font-bold text-lg text-midnight dark:text-white-900'>{i + 1} - {e.title}</h1>
-                            <p className='text-justify'>Lorem ipsum dolor, sit amet consectetur qwey adipisicing elit. Doloribus, as aliquam corporis dolorem consectetur qui libero, veritatis, nihil alias repellat quam architecto nobis laudantium ipsum nemo nesciunt quisquam est odit ad?</p>
-                        </div>
-                    </div>
-                )}
-            </div>
+            
             <br />
             <div className='w-full bg-black text-white-900 h-max text-sm text-center font-bold'>
                 <code>Blood Connect {new Date().getFullYear()}. All rights reserved.</code>
