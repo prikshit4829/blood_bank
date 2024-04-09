@@ -36,7 +36,7 @@ const Home = () => {
                     </p>
                 </div>
             </div>
-            <h1 className='font-bold text-center text-blood my-4 text-lg underline'>Learn About Donation</h1>
+            <h1 className='font-bold text-center text-black my-4 text-lg underline'>Learn About Donation</h1>
             <div className='flex px-20'>
                 <div>
                     <img src={donationFact} width="90%" alt="" />
@@ -47,7 +47,7 @@ const Home = () => {
                 <div>
                     <table className='w-max' cellPadding={5}>
                         <tr>
-                            <td colSpan={3} className="border bg-blood text-white-900 text-center font-bold">Compatible Blood Type Donors</td>
+                            <td colSpan={3} className="border bg-black text-white-900 text-center font-bold">Compatible Blood Type Donors</td>
                         </tr>
                         <tr>
                             <th className='border w-max text-lg'>Blood Type</th>
@@ -66,7 +66,7 @@ const Home = () => {
                     </table>
                 </div>
             </div>
-            <p className='text-xl underline font-bold text-blood text-center mt-5 mb-5'>
+            <p className='text-xl font-bold text-black text-center mt-5 mb-5'>
                 Blood Donation Process
             </p>
             <div className='grid grid-cols-2 place-items-center'>
@@ -81,8 +81,8 @@ const Home = () => {
                 )}
             </div>
             <br />
-            <div className='w-full bg-blood text-white-900 h-max text-sm text-center font-bold'>
-                <code>ॐ BloodLink @ {new Date().getFullYear()} ॐ || Made with ❤️ by Ujjwal</code>
+            <div className='w-full bg-black text-white-900 h-max text-sm text-center font-bold'>
+                <code>Blood Connect {new Date().getFullYear()}. All rights reserved.</code>
             </div>
         </div>
     )

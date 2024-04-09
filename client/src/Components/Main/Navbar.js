@@ -34,14 +34,14 @@ const Navbar = (props) => {
                                 draggable={false}
                                 alt="Your Company"
                             />
-                            <div className="text-2xl font-bold ml-2 text-blood">
+                            <div className="text-2xl font-bold ml-2 text-black">
                                 Blood Connect
                             </div>
                         </div>
                     </Link>
                     <div className="flex items-center justify-between">
                         <>
-                            <DropDown title="About Us" children={["Home", "About BloodLink", "Contact Us"]} links={["/", "/about", "/contactUs"]}></DropDown>
+                            <DropDown title="About Us" children={["Home", "About Us", "Contact Us"]} links={["/", "/about", "/contactUs"]}></DropDown>
                             {props.logIn ? (
                                 <>
                                     <Link
