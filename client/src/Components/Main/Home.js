@@ -45,7 +45,7 @@ const Home = () => {
             <div className='grid grid-cols-2 place-items-center'>
                 {temp2.map((e, i) =>
                     <div className='border-metal shadow-md rounded-lg overflow-hidden max-w-[90%] select-none grid grid-cols-2'>
-                        <div><img src={e.img} draggable={false} width="100%" alt="" /></div>
+                        <div className='py-5 px-5'><img src={e.img} draggable={false} width="90%" alt="" /></div>
                         <div className='m-4'>
                             <h1 className='font-bold text-lg text-midnight dark:text-white-900'>{i + 1} - {e.title}</h1>
                             <p className='text-justify'>Lorem ipsum dolor, sit amet consectetur qwey adipisicing elit. Doloribus, as aliquam corporis dolorem consectetur qui libero, veritatis, nihil alias repellat quam architecto nobis laudantium ipsum nemo nesciunt quisquam est odit ad?</p>
