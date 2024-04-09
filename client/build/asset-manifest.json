@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/static/css/main.a9b2e22e.css",
+    "main.js": "/static/js/main.c24e6b81.js",
+    "static/media/g3.jpg": "/static/media/g3.78b7018f4b41ac6d561c.jpg",
+    "static/media/bg2.png": "/static/media/bg2.ec63a3589349243eea35.png",
+    "static/media/cc.png": "/static/media/cc.c59f16fff8e92758d7f5.png",
+    "static/media/bg.webp": "/static/media/bg.ae69c6bc15764b4863ac.webp",
+    "static/media/g4.jpg": "/static/media/g4.188da0230f7c7c26fa79.jpg",
+    "static/media/logo.png": "/static/media/logo.4b89329c45c5bc4fd3dc.png",
+    "static/media/g2.jpg": "/static/media/g2.d8669f0c34528e7884a5.jpg",
+    "static/media/donationFact.webp": "/static/media/donationFact.5dd313ffb6596450b4ed.webp",
+    "static/media/g1.jpg": "/static/media/g1.57e2cf4c91356a3191ed.jpg",
+    "index.html": "/index.html",
+    "main.a9b2e22e.css.map": "/static/css/main.a9b2e22e.css.map",
+    "main.c24e6b81.js.map": "/static/js/main.c24e6b81.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a9b2e22e.css",
+    "static/js/main.c24e6b81.js"
+  ]
+}
