@@ -6,6 +6,7 @@ import g1 from "../../assets/donation/g1.jpg"
 import g2 from "../../assets/donation/g2.jpg"
 import g3 from "../../assets/donation/g3.jpg"
 import g4 from "../../assets/donation/g4.jpg"
+import Footer from './Footer';
 const Home = () => {
     const temp = [
         { blood: "A+", donate: "A+ AB+", recieve: "A+ A- O+ O-" },
@@ -81,9 +82,10 @@ const Home = () => {
                 )}
             </div>
             <br />
-            <div className='w-full bg-black text-white-900 h-max text-sm text-center font-bold'>
+            <Footer/>
+            {/* <div className='w-full bg-black text-white-900 h-max text-sm text-center font-bold'>
                 <code>Blood Connect {new Date().getFullYear()}. All rights reserved.</code>
-            </div>
+            </div> */}
         </div>
     )
 }
