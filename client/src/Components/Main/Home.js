@@ -1,6 +1,6 @@
 import React from 'react'
 import bg from "../../assets/bg.webp";
-import bg2 from "../../assets/bg2.jpg";
+import bg2 from "../../assets/bg2.png";
 import donationFact from "../../assets/donationFact.webp"
 import g1 from "../../assets/donation/g1.jpg"
 import g2 from "../../assets/donation/g2.jpg"
