@@ -35,7 +35,7 @@ const Navbar = (props) => {
                                 alt="Your Company"
                             />
                             <div className="text-2xl font-bold ml-2 text-blood">
-                                BloodLink
+                                Blood Connect
                             </div>
                         </div>
                     </Link>
