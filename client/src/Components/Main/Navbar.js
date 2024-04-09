@@ -83,10 +83,10 @@ const Navbar = (props) => {
                                     }
                                 }}
                             >
-                                <i
+                                {/* <i
                                     className={`dark:text-white-900 fa-solid fa-lg fa-${theme == 0 ? "sun" : "moon"
                                         }`}
-                                ></i>
+                                ></i> */}
                             </button>
                         </>
                     </div>
