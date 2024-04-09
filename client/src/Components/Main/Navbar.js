@@ -63,8 +63,8 @@ const Navbar = (props) => {
                                 </>
                             ) : (
                                 <>
-                                    <DropDown title="Looking For Blood" children={["Patient Login/Register", "Blood Bank Directory"]} links={["/register/patient", "/bloodDirect"]}></DropDown>
-                                    <DropDown title="Want To Donate Blood" children={["Donor Login/Register", "Blood Donation Camps", "About Blood Donation"]} links={["/register/donor", "/bloodCamps", "/aboutBloodDonation"]}></DropDown>
+                                    <DropDown title="Need Blood" children={["Patient Login/Register", "Blood Bank Directory"]} links={["/register/patient", "/bloodDirect"]}></DropDown>
+                                    <DropDown title="Donate Blood" children={["Donor Login/Register", "Blood Donation Camps", "About Blood Donation"]} links={["/register/donor", "/bloodCamps", "/aboutBloodDonation"]}></DropDown>
                                     <DropDown title="Blood Bank Login" children={["Login", "Add Your Bloodbank"]} links={["/login/bank", "/register/bank"]}></DropDown>
                                 </>
                             )}
@@ -83,10 +83,10 @@ const Navbar = (props) => {
                                     }
                                 }}
                             >
-                                <i
+                                {/* <i
                                     className={`dark:text-white-900 fa-solid fa-lg fa-${theme == 0 ? "sun" : "moon"
                                         }`}
-                                ></i>
+                                ></i> */}
                             </button>
                         </>
                     </div>
