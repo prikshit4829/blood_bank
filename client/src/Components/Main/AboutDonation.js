@@ -5,12 +5,6 @@ import g3 from "../../assets/donation/g3.jpg"
 import g4 from "../../assets/donation/g4.jpg"
 
 const AboutDonation = () => {
-    // const data = [
-    //     { title: "Registration", img: g1 },
-    //     { title: "Seeing", img: g2 },
-    //     { title: "Donation", img: g3 },
-    //     { title: "Save Life", img: g4 },
-    // ]
     const data = [
         { title: "Registration", img: g1 ,content:"Register yourself as a donor and provide your details. We will keep your information safe."},
         { title: "Seeing", img: g2 ,content:"Find a donor or a blood bank near you. You can also request blood."},
