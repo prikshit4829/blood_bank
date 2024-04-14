@@ -19,28 +19,22 @@ const Home = () => {
         { blood: "AB-", donate: "AB+ AB-", recieve: "AB- A- B- O-" }
     ]
     const temp2 = [
-        { title: "Registration", img: g1 },
-        { title: "Seeing", img: g2 },
-        { title: "Donation", img: g3 },
-        { title: "Save Life", img: g4 },
+        { title: "Registration", img: g1 ,content:"Register yourself as a donor and provide your details. We will keep your information safe."},
+        { title: "Seeing", img: g2 ,content:"Find a donor or a blood bank near you. You can also request blood."},
+        { title: "Donation", img: g3,content:"Donate blood to the one in need. You can also donate blood to a blood bank."},
+        { title: "Save Life", img: g4 ,content:"Save a life by donating blood. You can also request blood from a donor."},
     ]
     return (
         <div className="dark:text-white-900">
             <img src={bg} alt="" />
-            <div className='grid grid-cols-2 place-items-center mt-6 px-52'>
+            <div className='place-items-center mx-36 px-52'>
                 <div>
                     <img draggable={false} src={bg2} width="100%" alt="" />
                 </div>
-                <div>
-                    <p className='text-center font-bold text-4xl text-gray-dark dark:text-white-900'>
-                        Be the reason for <br/>someone's heartbeat
-                    </p>
-                </div>
             </div>
             <br/>
-            <br/>
-            <h1 className='text-xl underline font-bold text-black text-center mt-5 mb-5'>
-                Blood Donation Process
+            <h1 className=' text-3xl font-bold text-black text-center mt-10 mb-5'>
+                BLOOD DONATION PROCESS
             </h1>
             <br/>
             <div className='grid grid-cols-2 place-items-center'>
@@ -49,24 +43,17 @@ const Home = () => {
                         <div className='py-5 px-5'><img src={e.img} draggable={false} width="90%" alt="" /></div>
                         <div className='m-4'>
                             <h1 className='font-bold text-lg text-midnight dark:text-white-900'>{i + 1} - {e.title}</h1>
-                            <p className='text-justify'>Lorem ipsum dolor, sit amet consectetur qwey adipisicing elit. Doloribus, as aliquam corporis dolorem consectetur qui libero, veritatis, nihil alias repellat quam architecto nobis laudantium ipsum nemo nesciunt quisquam est odit ad?</p>
+                            <p className='text-justify'>{e.content}</p>
                         </div>
                     </div>
                 )}
             </div>
             <br/>
             <br/>
-            <br/>
-            <br/>
-            <h1 className='font-bold text-center text-black my-4 text-lg underline'>Learn About Donation</h1>
+            <h1 className=' text-3xl font-bold text-black text-center mt-10 mb-5'>HOW DOES IT WORK</h1>
             <br/>
             <div className='flex px-20'>
-                <div>
-                    <img src={donationFact} width="90%" alt="" />
-                    <p className='text-center'>
-                        <code>After donating blood, the body works to replenish the blood loss. This stimulates the production of new blood cells and in turn, helps in maintaining good health.</code>
-                    </p>
-                </div>
+                
                 <div>
                     <table className='w-max' cellPadding={5}>
                         <tr>
@@ -88,7 +75,14 @@ const Home = () => {
                         })}
                     </table>
                 </div>
+                <div>
+                    <img src={donationFact} width="90%" alt="" />
+                    <p className='text-center'>
+                        <code>After donating blood, the body works to replenish the blood loss. This stimulates the production of new blood cells and in turn, helps in maintaining good health.</code>
+                    </p>
+                </div>
             </div>
+            
             
             <br />
             <Footer/>

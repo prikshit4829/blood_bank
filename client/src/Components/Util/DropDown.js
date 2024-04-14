@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from "react-router-dom";
 
 const DropDown = (props) => {
-    const s1 = "rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap font-semibold hover:bg-blood hover:text-white-900";
+    const s1 = "rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap font-semibold hover:bg-black hover:text-white-900";
     const s2 =
     "px-6 py-2 font-semibold text-base rounded-full group-hover:px-12 group-hover:drop-shadow-2xl shadow-sm bg-black z-30 text-white-900 hover:drop-shadow-md hover:opacity-80";
 
@@ -27,7 +27,7 @@ const DropDown = (props) => {
     </span>
       
     </button>
-    <ul className="ml-6 px-2 py-2 absolute hidden text-gray-700 pt-1 z-10 group-hover:block w-max bg-white-900 hover:drop-shadow-2xl border-blood hover:border-b-2 dark:bg-white-900 rounded-tl-lg rounded-b-lg">
+    <ul className="ml-6 px-2 py-2 absolute hidden text-gray-700 pt-1 z-10 group-hover:block w-max bg-white-900 hover:drop-shadow-2xl border-black hover:border-b-2 dark:bg-white-900 rounded-tl-lg rounded-b-lg">
         {
             props.children.map((e,i)=>{
                 return (

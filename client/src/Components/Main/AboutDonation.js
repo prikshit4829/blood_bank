@@ -6,10 +6,10 @@ import g4 from "../../assets/donation/g4.jpg"
 
 const AboutDonation = () => {
     const data = [
-        { title: "Registration", img: g1 },
-        { title: "Seeing", img: g2 },
-        { title: "Donation", img: g3 },
-        { title: "Save Life", img: g4 },
+        { title: "Registration", img: g1 ,content:"Register yourself as a donor and provide your details. We will keep your information safe."},
+        { title: "Seeing", img: g2 ,content:"Find a donor or a blood bank near you. You can also request blood."},
+        { title: "Donation", img: g3,content:"Donate blood to the one in need. You can also donate blood to a blood bank."},
+        { title: "Save Life", img: g4 ,content:"Save a life by donating blood. You can also request blood from a donor."},
     ]
     return (
         <section className="grid place-items-center dark:text-white-900">
@@ -24,7 +24,7 @@ const AboutDonation = () => {
                             <img src={e.img} draggable={false} width="100%" alt="" />
                             <div className='m-4'>
                                 <h1 className='font-bold text-lg text-midnight'>{i + 1} - {e.title}</h1>
-                                <p className='text-justify'>Lorem ipsum dolor, sit amet consectetur qwey adipisicing elit. Doloribus, as aliquam corporis dolorem consectetur qui libero, veritatis, nihil alias repellat quam architecto nobis laudantium ipsum nemo nesciunt quisquam est odit ad?</p>
+                                <p className='text-justify'>{e.content}</p>
                             </div>
                         </div>
                     )}
