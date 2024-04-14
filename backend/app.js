@@ -3,14 +3,11 @@ const cors = require("cors");
 const dotenv = require("dotenv");
 const mongoose = require('mongoose');
 const cookieParser = require("cookie-parser");
-const path = require('path');
 
 const app = express();
 const port = 3177;
 
 dotenv.config();
-
-app.use(express.static(path.join(__dirname, '../client/build')));
 
 app.use(cookieParser());
 app.use(express.json());
@@ -23,9 +20,6 @@ app.use(
 	})
 );
 
-app.get('*', (req, res) => {
-	res.sendFile(path.join(__dirname,'../client/build/index.html'));
-});
 
 mongoose.connect(process.env.CONNECT, { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true }, (e) => {
 	console.log(e ? e : "Connected successfully to database");
